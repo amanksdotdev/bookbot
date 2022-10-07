@@ -36,6 +36,7 @@ def print_report(book_path: str, book_content: str):
     print('\n--- End report ---')
 
 
-with open(PATH) as f:
-    book_content = f.read()
-    print_report(PATH, book_content)
+if __name__ == '__main__':
+    with open(PATH) as f:
+        book_content = f.read()
+        print_report(PATH, book_content)
